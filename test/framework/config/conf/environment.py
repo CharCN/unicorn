@@ -1,1 +1,1 @@
-ENVIRONMENT = 'tesst'
+ENVIRONMENT = 'test'

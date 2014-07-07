@@ -6,13 +6,13 @@ Created on Jun 26, 2014
 import unittest
 from unicorn.framework.config import conf
 
-print conf.something
-
-class Test(unittest.TestCase):
+class ConfigTest(unittest.TestCase):
     
-
-    def testName(self):
-        pass
+    def testProperty(self):
+        self.assertEqual(123, conf.getProperty('SOMETHING_TEST'))
+        
+    def testContain(self):
+        self.assertEqual(False, 'Something' in conf)
 
 
 if __name__ == "__main__":

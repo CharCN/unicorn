@@ -1,1 +1,1 @@
-__all__ = ('singleton')
+__all__ = ('singleton', 'enum')
