@@ -42,7 +42,6 @@ class EnumMetaClass(type):
     def __contains__(self,item):
         return item.upper() in self.__enum_strs__
 
-print 123222222
 def enum(cls):
     # Just wrapper class using EnumMetaClass 
     cls = EnumMetaClass(cls.__name__,cls.__bases__,cls.__dict__)
